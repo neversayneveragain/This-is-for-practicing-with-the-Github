@@ -1,0 +1,66 @@
+# DCA
+1. Euclidean Distance
+
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+double Euclidean(double x1,double y1,double x2,double y2)
+{
+    double distance;
+    distance = sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    return distance;
+}
+int main()
+{
+    double x1,y1,x2,y2;
+    cout<<"Enter the  value of x1: ";
+    cin>>x1;
+    cout<<"Enter the value of y1: ";
+    cin>>y1;
+    cout<<"Enter the value of x2: ";
+    cin>>x2;
+    cout<<"Enter the value of y2: ";
+    cin>>y2;
+
+    double result = Euclidean(x1,y1,x2,y2);
+    cout<<"Euclidean Distance: "<<result;
+    return 0;
+}
+
+
+2. City Block (Manhattan Distance)
+
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+double city_block_distance(double x1,double y1,double x2,double y2)
+{
+    double distance;
+    distance = (abs(x2-x1) + abs(y2-y1));
+    return distance;
+}
+int main()
+{
+    double x1,y1,x2,y2;
+    cout<<"Enter the  value of x1: ";
+    cin>>x1;
+    cout<<"Enter the value of y1: ";
+    cin>>y1;
+    cout<<"Enter the value of x2: ";
+    cin>>x2;
+    cout<<"Enter the value of y2: ";
+    cin>>y2;
+
+    double result = city_block_distance(x1,y1,x2,y2);
+    cout<<"City Block Distance: "<<result;
+    return 0;
+}
+
+
+3. Mimkowiski 
+
+
