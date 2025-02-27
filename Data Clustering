@@ -62,5 +62,27 @@ int main()
 
 
 3. Mimkowiski 
+#include <iostream>
+#include <cmath>
+#include <limits>
+
+using namespace std;
+
+int main() {
+
+  float x1 = 2;
+  float y1 = 3;
+  float x2 = 5;
+  float y2 = 7;
+  float p = 3;
+
+  float sum = 0;
+  float dx = pow(abs(x2-x1),p);
+  float dy = pow(abs(y2-y1),p);
+  sum = dx+dy;
+  float distance = pow(sum,(1.0/p));
+  cout << distance;
+  return 1;
+}
 
 
